@@ -1,6 +1,13 @@
 .pink-bg {
   background-color: pink;
 }
+.button {
+ border-radius:10px ;
+ background-color:#750ff7; 
+ padding: 10px;
+ font-size: 30px;
+ 
+}
 
 .pink-text {
   color: pink;
@@ -26,12 +33,39 @@
 .desktop {
   margin: 80px 0 -5px 0;
 }
+@media screen and (max-width: 700px) {
+  .desktop {
+    display: none;
+  }
+          
+        
+}
 
 .skills {
   margin-top: -30px;
   border-radius: 12px;
   padding: 0 10%;
 }
+@media screen and (min-width: 700px) {
+    .skills{
+      display: flex;
+      justify-content: center;
+      flex-direction: row-reverse;
+      
+    }
+  
+      }  
+      
+      @media screen and (max-width: 700px) {
+        .skills{
+          display: flex;
+          align-items: center;
+          flex-direction:column-reverse ;
+        }
+      }
+        
+        
+
 
 .column {
   border-left: 1px solid #e6ecf8;
@@ -69,7 +103,7 @@
 }
 
 img {
-  max-width: 100%;
+  max-width: 50%;
 }
 
 .projects a {
@@ -80,3 +114,26 @@ p {
   padding-left: 15px;
   padding-right: 15px;
 }
+
+.menu {
+  display:flex ;
+  justify-content: flex-end;
+  width:100%;
+  aligns-item:center;
+  
+}
+@media screen and (min-width: 700px) {
+  .banner-avatarimage {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    
+    }
+    
+  }
+
+  @media screen and (max-width: 700px) {
+        
+          
+        
+  }
